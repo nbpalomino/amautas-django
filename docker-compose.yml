@@ -1,0 +1,19 @@
+    version: '2'
+    services:
+        db:
+            image: "postgres"
+            ports:
+                - "5432:5432"
+            environment:
+                POSTGRES_USER: docker
+                POSTGRES_PASSWORD: docker
+        web:
+            build: .
+            image: amautas
+            command: python manage.py runserver 0.0.0.0:8000
+            volumes:
+                - .:/code
+            ports:
+                - "8000:8000"
+            depends_on:
+                - db

@@ -1,0 +1,28 @@
+{
+  "name": "otin-board",
+  "authors": [
+    "nbpalomino <nbpalomino@gmail.com>"
+  ],
+  "description": "A board for projects from OTIN",
+  "main": "index.js",
+  "keywords": [
+    "OTIN",
+    "INEI",
+    "Software"
+  ],
+  "license": "MIT",
+  "homepage": "http://proyectos.inei.gob.pe",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^2.2.1",
+    "vue-resource": "^1.2.1",
+    "material-design-lite": "^1.3.0"
+  }
+}
