@@ -1,4 +1,5 @@
 .git/
+.idea/
 static/packages/
 *.sqlite3
 */__pycache__

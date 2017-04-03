@@ -1,6 +1,8 @@
-<h3>Amautas</h3>
-<hr>
+{% extends 'base.html' %}
+
+{% block content %}
 <h1>{{ job.title }}</h1>
 <p>
   {{ job.body }}
 </p>
+{% endblock %}

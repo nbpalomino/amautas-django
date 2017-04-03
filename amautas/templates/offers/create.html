@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Amautas | Crear oferta</h3>
+<hr>
+<form class="" action="{% url 'offers:store' %}" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" name="submit" value="Guardar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+</form>
+{% endblock %}
